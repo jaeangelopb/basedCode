@@ -1,0 +1,18 @@
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\bin\Release\RFID.ASMXService.Client.Client.exe.config
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\bin\Release\RFID.ASMXService.Client.Client.exe
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\bin\Release\RFID.ASMXService.Client.Client.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Release\RFID.ASMXService.Client.csprojResolveAssemblyReference.cache
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Release\RFID.ASMXService.Client.MainForm.resources
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Release\RFID.ASMXService.Client.ResultsGrid.resources
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Release\RFID.ASMXService.Client.csproj.GenerateResource.Cache
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Release\RFID.ASMXService.Client.Client.exe
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Release\RFID.ASMXService.Client.Client.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\bin\Release\RFID.ASMXService.Client.Client.exe.config
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\bin\Release\RFID.ASMXService.Client.Client.exe
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\bin\Release\RFID.ASMXService.Client.Client.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Release\RFID.ASMXService.Client.csprojResolveAssemblyReference.cache
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Release\RFID.ASMXService.Client.MainForm.resources
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Release\RFID.ASMXService.Client.ResultsGrid.resources
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Release\RFID.ASMXService.Client.csproj.GenerateResource.Cache
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Release\RFID.ASMXService.Client.Client.exe
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Release\RFID.ASMXService.Client.Client.pdb

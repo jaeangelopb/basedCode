@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C964928-1EB9-4726-ADDD-AC3827C1EEA1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RFID.ASMXService.BusinessEntities</RootNamespace>
+    <AssemblyName>RFID.ASMXService.BusinessEntities.BusinessEntities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="AccountEntity.cs" />
+    <Compile Include="AccountListEntity.cs" />
+    <Compile Include="AdminEntity.cs" />
+    <Compile Include="AdminListEntity.cs" />
+    <Compile Include="AdminPropertyEntity.cs" />
+    <Compile Include="AdminPropertyListEntity.cs" />
+    <Compile Include="AffiliationEntity.cs" />
+    <Compile Include="GateTerminalEntity.cs" />
+    <Compile Include="GateTerminalListEntity.cs" />
+    <Compile Include="GateTypeEntity.cs" />
+    <Compile Include="GateTypeListEntity.cs" />
+    <Compile Include="Gender.cs" />
+    <Compile Include="DepartmentEntity.cs" />
+    <Compile Include="GenderEntity.cs" />
+    <Compile Include="GenderListEntity.cs" />
+    <Compile Include="ListRFIDlog.cs" />
+    <Compile Include="Member.cs" />
+    <Compile Include="MemberEntity.cs" />
+    <Compile Include="MemberListEntity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RFIDLogEntity.cs" />
+    <Compile Include="RoleEntity.cs" />
+    <Compile Include="RoleListEntity.cs" />
+    <Compile Include="SMSRFIDLog.cs" />
+    <Compile Include="StudentLogEntity.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Roles="BusinessEntityRole" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

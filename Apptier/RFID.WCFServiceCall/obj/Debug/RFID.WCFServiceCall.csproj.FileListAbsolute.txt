@@ -1,0 +1,57 @@
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\obj\Debug\RFID.WCFServiceCall.csprojResolveAssemblyReference.cache
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\bin\ApplicationInsights.config
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\bin\RFID.WCFServiceCall.dll.config
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\bin\RFID.WCFServiceCall.dll
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\bin\RFID.WCFServiceCall.pdb
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.BusinessEntities.BusinessEntities.dll
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.BusinessLogic.BusinessLogic.dll
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\bin\RFID.Helper.dll
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.DataAccess.DataAccess.dll
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.BusinessEntities.BusinessEntities.pdb
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.BusinessLogic.BusinessLogic.pdb
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\bin\RFID.Helper.pdb
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.DataAccess.DataAccess.pdb
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\obj\Debug\RFID.WCFServiceCall.dll
+E:\ACTIVE\RFID\Apptier\RFID.WCFServiceCall\obj\Debug\RFID.WCFServiceCall.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\bin\ApplicationInsights.config
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\bin\RFID.WCFServiceCall.dll.config
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\bin\RFID.WCFServiceCall.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\bin\RFID.WCFServiceCall.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.BusinessEntities.BusinessEntities.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.BusinessLogic.BusinessLogic.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\bin\RFID.Helper.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.DataAccess.DataAccess.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.BusinessEntities.BusinessEntities.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.BusinessLogic.BusinessLogic.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\bin\RFID.Helper.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.DataAccess.DataAccess.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\obj\Debug\RFID.WCFServiceCall.csprojResolveAssemblyReference.cache
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\obj\Debug\RFID.WCFServiceCall.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.WCFServiceCall\obj\Debug\RFID.WCFServiceCall.pdb
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\bin\ApplicationInsights.config
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\bin\RFID.WCFServiceCall.dll.config
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\bin\RFID.WCFServiceCall.dll
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\bin\RFID.WCFServiceCall.pdb
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.BusinessEntities.BusinessEntities.dll
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.BusinessLogic.BusinessLogic.dll
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\bin\RFID.Helper.dll
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.DataAccess.DataAccess.dll
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.BusinessEntities.BusinessEntities.pdb
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.BusinessLogic.BusinessLogic.pdb
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\bin\RFID.Helper.pdb
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\bin\RFID.ASMXService.DataAccess.DataAccess.pdb
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\obj\Debug\RFID.WCFServiceCall.csprojResolveAssemblyReference.cache
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\obj\Debug\RFID.WCFServiceCall.dll
+C:\RFID-BaseCode\Apptier\RFID.WCFServiceCall\obj\Debug\RFID.WCFServiceCall.pdb

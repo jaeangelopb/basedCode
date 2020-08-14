@@ -1,0 +1,234 @@
+﻿@{
+    ViewBag.Title = "Company";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row clearfix" ng-controller="CompanyController">
+    <div class="row clearfix">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="header" style="padding-bottom:0px;">
+                    <div layout-gt-sm="row">
+                        <div flex-gt-sm="30">
+                            <h2>
+                                <i class="material-icons">dashboard</i>
+                                <span>Company</span>
+                            </h2>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="body">
+                    <div class="row clearfix">
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box bg-pink hover-expand-effect" ng-click="Account()">
+                                <div class="icon">
+                                    <i class="material-icons">access_time</i>
+                                </div>
+                                <div class="content">
+                                    <div class="text">Account</div>
+                                    <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20">{{summary[0].Total}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box bg-cyan  hover-expand-effect" ng-click="Department()">
+                                <div class="icon">
+                                    <i class="material-icons">exit_to_app</i>
+                                </div>
+                                <div class="content">
+                                    <div class="text">Department</div>
+                                    <div class="number count-to" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20">{{summary[1].Total}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box bg-light-green hover-expand-effect" ng-click="Affilation()">
+                                <div class="icon">
+                                    <i class="material-icons">announcement</i>
+                                </div>
+                                <div class="content">
+                                    <div class="text">Affilation</div>
+                                    <div class="number count-to" data-from="0" data-to="243" data-speed="1000" data-fresh-interval="20">{{summary[2].Total}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="header">
+                    <div class="row clearfix action-group" ng-if="mode=='list'  && !processing.enable">
+                        <div class="col-md-2">
+                            <h2>Company</h2>
+                        </div>
+                        <div class="col-md-2" style="height:50px;padding-top:15px;">
+                        <div class="button-demo pull-right">
+                            <button type="button" class="btn bg-red btn-circle waves-effect waves-circle waves-float" ng-click="ToAdd()">
+                                <i class="material-icons">plus_one</i>
+                            </button>
+                        </div>
+                    </div>
+                        <div class="col-md-4" style="height:50px;padding-top:15px;">
+                            <div class="button-demo pull-right">
+                                <md-fab-actions class="md-toolbar-tools" style="height:30px;">
+                                    <md-button aria-label="photo" class="md-icon-button" ng-click="ConfirmDelete()" ng-if="mode=='list' && checklistary.length > 0">
+                                        <md-tooltip md-direction="top">Delete company</md-tooltip>
+                                        <i class="material-icons">delete</i>
+                                    </md-button>
+                                </md-fab-actions>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div layout-gt-sm="row" style="height:50px">
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>Search</label>
+                                    <input ng-keyup="Search()" ng-model="list.Search" autocomplete="off">
+                                </md-input-container>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="row clearfix action-group" ng-if="mode!='list'  && !processing.enable">
+                        <div class="col-md-4">
+                           <!--<h2>{{ (mode=='Account') ? 'Account' : 'Account' ? 'Department' : 'Department' ? 'Affilation' : 'Affilation' ? 'GateTerminal' : 'GateTerminal' }}</h2>--> 
+                        </div>
+                    </div>
+                    <div class="clearfix action-group" ng-if="processing.enable">
+                        <h2 ng-if="processing.label == 'delete'"><i class="material-icons" style="vertical-align:-5px;">delete</i> Deleting company {{ checkindex }} of {{ checklistary.length }}</h2>
+                    </div>
+                </div>
+                <div class="body">
+
+                    <div ng-if="mode=='list'">
+                  <!---  <a aria-label="photo" class="md-icon-button" ng-click="ToAdd()">
+                            <md-tooltip md-direction="top">Edit detail</md-tooltip>
+                            <i class="material-icons">edit</i>
+                        </a>-->    
+                 
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hover js-basic-example dataTable" style="font-size:12.5px;">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <center>
+                                                <md-checkbox ng-model="checkAll" aria-label="select" class="md-warn"></md-checkbox>
+                                            </center>
+                                        </th>
+                                        <th>Company Name</th>
+                                        <th>Address</th>
+                                        <th>Email Address</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="item in list.data.AccountList" ng-if="!loading">
+                                        <td>
+                                            <center>
+                                                <md-checkbox ng-model="checklist[item.AccountID]" ng-true-value="'{{ item.AccountID }}'" ng-false-value="{{null}}" aria-label="select" ng-change="checkchanged()" class="md-warn" ng-checked="checkAll"></md-checkbox>
+                                            </center>
+                                        </td>
+                                        <td class="noright">
+                                            {{item.AccountName}}
+                                        </td>
+                                        <td>
+                                            {{item.Branch}}
+                                        </td>
+                                        <td>{{ item.EmailAddress }}</td>
+                                        <td>
+                                            <a aria-label="photo" class="md-icon-button" ng-click="ToAccountForm(item)">
+                                                <md-tooltip md-direction="top">Edit detail</md-tooltip>
+                                                <i class="material-icons">edit</i>
+                                            </a>
+                                            &nbsp;||                                            &nbsp;
+                                            <a aria-label="photo" class="md-icon-button" href="@Url.Action("Index","GateTerminal")?AccountID={{item.AccountID}}">
+                                                <md-tooltip md-direction="top">Gate Terminal</md-tooltip>
+                                                <i class="material-icons">remove_red_eye</i>
+                                            </a>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr ng-if="list.data.length == 0 && list.Search != '' && !list.loading">
+                                        <td colspan="5">
+                                            <i class="material-icons">info</i>
+                                            <span style="vertical-align: super;">No matching "{{ list.Search }}" company were found.</span>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr ng-if="list.data.length == 0  && list.Search == '' && !list.loading">
+                                        <td colspan="5">
+                                            <i class="material-icons">info</i>
+                                            <span style="vertical-align: super;">No company yet.</span>
+
+                                        </td>
+                                    </tr>
+                                    <tr ng-if="list.loading">
+                                        <td colspan="5">
+                                            <i class="material-icons">info</i>
+                                            <span style="vertical-align: super;">Loading data...</span>
+
+                                        </td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="dataTables_paginate paging_simple_numbers" align="center" id="DataTables_Table_0_paginate">
+                            <ul class="pagination">
+                                <li class="paginate_button previous" id="DataTables_Table_0_previous">
+                                    <a aria-controls="DataTables_Table_0" ng-click="PageIndexChange(-1)" ng-disabled="(list.totalPage == 0)" tabindex="0">Previous</a>
+                                </li>
+                                <li class="paginate_button">
+                                    <a aria-controls="DataTables_Table_0" tabindex="0">{{ (list.totalPage > 0) ? list.PageIndex : 0 }} of {{ list.totalPage }} - {{ list.total }} item(s)</a>
+                                </li>
+                                <li class="paginate_button next" id="DataTables_Table_0_next">
+                                    <a aria-controls="DataTables_Table_0" ng-click="PageIndexChange(1)" ng-disabled="(list.totalPage == 0)" tabindex="0">Next</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div ng-if="mode=='ToAccountForm' || mode=='ToAdd'">
+                        @Html.Partial("Partial/AccountForm")
+                    </div>
+                    <div ng-if="mode=='Account' || mode=='Accounts'">
+                        @Html.Partial("partial/Account")
+                    </div>
+                    <div ng-if="mode=='Affilation' || mode=='Affilations'">
+                        @Html.Partial("partial/Affilation")
+                    </div>
+                    <div ng-if="mode=='Department' || mode=='Departments'">
+                        @Html.Partial("partial/Department")
+                    </div>
+                    @*<div ng-if="mode=='GateTerminal' || mode=='GateTerminals'">
+                        @Html.Partial("partial/GateTerminal")
+                    </div>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    function toggle(source) {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i] != source)
+                checkboxes[i].checked = source.checked;
+        }
+    }
+</script>
+
+@section Scripts {
+    <script src="~/Scripts/controller/Company.js"></script>
+}

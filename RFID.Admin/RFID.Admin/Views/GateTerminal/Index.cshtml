@@ -1,0 +1,262 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<input type="hidden" id="AccountID" name="AccountID" value="@ViewBag.AccountID" />
+
+
+
+<div class="row clearfix" ng-controller="GateTerminalController">
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+
+                <div class="header">
+                    <div class="row clearfix action-group" ng-if="mode=='list'  && !processing.enable">
+                        <div class="col-md-2">
+                            <h2>Employee</h2>
+                        </div>
+                        <div class="col-md-4" style="height:50px;padding-top:15px;">
+                            <input type="file" accept=".csv" style="display:none;" id="uploadcsv" onchange="angular.element(this).scope().UploadCSV(this.files)" />
+                            <div class="button-demo pull-right">
+                                <md-fab-actions class="md-toolbar-tools" style="height:30px;">
+                                    <md-button aria-label="comment" class="md-icon-button" ng-click="ConfirmEmployeeStatus(1)" ng-if="mode=='list' && checklistary.length > 0">
+                                        <md-tooltip md-direction="top">Set active</md-tooltip>
+                                        <i class="material-icons">how_to_reg</i>
+                                    </md-button>
+                                    <md-button aria-label="label" class="md-icon-button" ng-click="ConfirmEmployeeStatus(2)" ng-if="mode=='list' && checklistary.length > 0">
+                                        <md-tooltip md-direction="top">Set deactive</md-tooltip>
+                                        <i class="material-icons">clear</i>
+                                    </md-button>
+                                    <md-button aria-label="photo" class="md-icon-button" ng-click="ConfirmEmployeeStatus(0)" ng-if="mode=='list' && checklistary.length > 0">
+                                        <md-tooltip md-direction="top">Delete employee</md-tooltip>
+                                        <i class="material-icons">delete</i>
+                                    </md-button>
+                                    <md-button aria-label="photo" class="md-icon-button btn-danger" ng-click="ToView(item)" data-toggle="modal" data-target="#smallModal" data-backdrop="false" data-keyboard="false">
+                                        <md-tooltip md-direction="top">Add Gate Terminal</md-tooltip>
+                                        <i class="material-icons">edit</i>
+                                    </md-button>
+
+                                </md-fab-actions>
+                                @*<button type="button" ng-if="mode=='list'" ng-click="ToAdd()" class="btn btn-danger waves-effect"><i class="material-icons">add</i></button>*@
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div layout-gt-sm="row" style="height:50px">
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>Company</label>
+                                    <md-select ng-model="list.CompanyID" ng-change="Search()" autocomplete="off">
+                                        <md-option ng-repeat="opt in companylist" ng-value="opt.CompanyID">{{ opt.CompanyName }}</md-option>
+                                    </md-select>
+                                </md-input-container>
+                                <md-input-container class="md-block" flex-gt-sm="40">
+                                    <label>Search</label>
+                                    <input ng-keyup="Search()" ng-model="list.Search" autocomplete="off">
+                                </md-input-container>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix action-group" ng-if="mode!='list' && !processing.enable">
+                        <div class="col-md-4">
+                            <h2>{{ (mode=='add') ? 'Add' : (mode=='upload') ? 'Import': 'Edit' }} Employee</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="button-demo pull-right" ng-if="mode!='upload'">
+                                <button type="button" ng-click="ToCancel()" class="btn btn-default waves-effect">CANCEL</button>
+                                <button type="button" ng-click="ConfirmSave()" class="btn btn-danger waves-effect">SAVE</button>
+                            </div>
+                            <div class="button-demo pull-right" ng-if="mode=='upload'">
+                                <button type="button" ng-click="ToCancel()" class="btn btn-default waves-effect" ng-if="!uploadlist.submitting">CANCEL</button>
+                                <button type="button" ng-click="ConfirmUpload()" class="btn btn-danger waves-effect" ng-disabled="uploadlist.submitting">
+                                    IMPORT
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix action-group" ng-if="processing.enable">
+                        <h2 ng-if="processing.label == 'active'"><i class="material-icons" style="vertical-align:-5px;">how_to_reg</i> Updating employees to active {{ checkindex }} of {{ checklistary.length }}</h2>
+                        <h2 ng-if="processing.label == 'deactive'"><i class="material-icons" style="vertical-align:-5px;">clear</i>  Updating employees to deactive {{ checkindex }} of {{ checklistary.length }}</h2>
+                        <h2 ng-if="processing.label == 'delete'"><i class="material-icons" style="vertical-align:-5px;">delete</i> Deleting employees {{ checkindex }} of {{ checklistary.length }}</h2>
+                        <h2 ng-if="processing.label == 'upload'"><i class="material-icons" style="vertical-align:-5px;">save_alt</i> Importing employees {{uploadlist.submitIndex}} of {{uploadlist.total}}</h2>
+                    </div>
+
+
+                </div>
+                <div class="body">
+
+
+                    <div ng-if="mode=='list'">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hover js-basic-example dataTable" style="font-size:12.5px;">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <center>
+                                                <md-checkbox ng-model="checkAll" aria-label="select" class="md-warn"></md-checkbox>
+                                            </center>
+                                        </th>
+                                        <th ng-if="list.CompanyID == '-'">Company</th>
+                                        <th>GateTerminal Name</th>
+                                        <th>Gate Type</th>
+                                        <th>Account Name</th>
+                                        <th>Status</th>
+                                        @*<th>Last Time In</th>
+                                            <th>Last Time Out</th>*@
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="item in GateTerminal.data.GateTerminalList" ng-if="!list.loading">
+                                        <td>
+                                            <center>
+                                                <md-checkbox ng-model="checklist[item.GateTerminalID]" ng-true-value="'{{ item.EmployeeID }}'" ng-false-value="{{null}}" aria-label="select" ng-change="checkchanged()" class="md-warn" ng-checked="checkAll"></md-checkbox>
+                                            </center>
+                                        </td>
+                                        <td ng-if="list.GateTerminalID == '-'">{{ item.CompanyDC.CompanyName }}</td>
+                                        <td>
+                                              {{ item.GateTerminalName }}
+                                        </td>
+                                        <td>{{ item.GateTypeName }}</td>
+                                        <td>{{ item.AccountName }}</td>
+                                        <td>{{ (item.IsActive) ? 'Active' : 'Inactive' }} </td>
+                                        @*<td>{{ item.LTIMEIN }}</td>
+                                            <td>{{ item.LTIMEOUT }}</td>*@
+                                        <td>
+
+                                            <md-button aria-label="photo" class="md-icon-button" ng-click="ToView(item)"  data-toggle="modal" data-target="#smallModal" data-backdrop="false" data-keyboard="false">
+                                                <md-tooltip md-direction="top">Edit detail</md-tooltip>
+                                                <i class="material-icons">edit</i>
+                                            </md-button>
+                                        </td>
+                                    </tr>
+                                    <tr ng-if="list.data.length == 0 && list.Search != '' && !list.loading">
+                                        <td colspan="7">
+                                            <i class="material-icons">info</i>
+                                            <span style="vertical-align: super;">No matching "{{ list.Search }}" employee were found.</span>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr ng-if="list.data.length == 0 && !list.Search && !list.loading">
+                                        <td colspan="7">
+                                            <i class="material-icons">info</i>
+                                            <span style="vertical-align: super;">No employee yet.</span>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr ng-if="list.loading">
+                                        <td colspan="7">
+                                            <i class="material-icons">info</i>
+                                            <span style="vertical-align: super;">Loading data...</span>
+
+                                        </td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="dataTables_paginate paging_simple_numbers" align="center" id="DataTables_Table_0_paginate">
+                            <ul class="pagination">
+                                <li class="paginate_button previous" id="DataTables_Table_0_previous">
+                                    <a aria-controls="DataTables_Table_0" ng-click="PageIndexChange(-1)" ng-disabled="(list.totalPage == 0)" tabindex="0">Previous</a>
+                                </li>
+                                <li class="paginate_button">
+                                    <a aria-controls="DataTables_Table_0" tabindex="0">{{ (list.totalPage > 0) ? list.PageIndex : 0 }} of {{ list.totalPage }} - {{ list.total }} item(s)</a>
+                                </li>
+                                <li class="paginate_button next" id="DataTables_Table_0_next">
+                                    <a aria-controls="DataTables_Table_0" ng-click="PageIndexChange(1)" ng-disabled="(list.totalPage == 0)" tabindex="0">Next</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="smallModal" tabindex="-1" role="dialog"  style="z-index:1; padding-top:5%;" >
+        <form class="form-horizontal" id="form">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="smallModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <input type="hidden" id="AccountID" name="GateTerminal.AccountID" value="@ViewBag.AccountID" />
+                                <input type="hidden" name="GateTerminal.GateTerminalID" ng-model="GateTerminals.GateTerminalID" />
+                                <div layout-gt-sm="row">
+                                    <md-input-container class="md-block" flex-gt-sm>
+                                        <label>Employee No.</label>
+                                        <input type="text" ng-model="GateTerminals.GateTerminalName" name="GateTerminal.GateTerminalName" autocomplete="off">
+                                    </md-input-container>
+                                </div>
+                                <div layout-gt-sm="row">
+                                    <md-input-container class="md-block" flex-gt-sm="50">
+                                        <label>Gate Type</label>
+                                        <md-select ng-model="GateTerminals.GateTypeID" name="GateTerminal.GateTypeID" >
+                                            <md-option ng-repeat="opt in GateTypes track by opt.GateTypeID" ng-value="opt.GateTypeID">{{ opt.GateTypeName}}</md-option>
+
+                                        </md-select>
+                                    </md-input-container>
+                                    <md-input-container class="md-block" flex-gt-sm="50">
+                                        <label>Status</label>
+                                        <md-select ng-model="GateTerminals.IsActive" name="GateTerminal.IsActive" autocomplete="off">
+                                            <md-option>====</md-option>
+                                            <md-option  ng-value="true">Active</md-option>
+                                            <md-option ng-value="false">Inactive</md-option>
+
+                                        </md-select>
+                                    </md-input-container>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+
+        
+                </div>
+                <div class="modal-footer">
+
+
+                    <button type="button"  data-dismiss="modal" class="btn btn-default waves-effect">CANCEL</button>
+                    <button type="button" ng-click="ConfirmSave()" class="btn btn-danger waves-effect">SAVE</button>
+                </div>
+            </div>
+        </div></form>
+    </div>
+
+</div>
+
+
+<script>
+    function toggle(source) {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i] != source)
+                checkboxes[i].checked = source.checked;
+        }
+    }
+</script>
+@section Scripts {
+    <script src="~/Scripts/controller/GateTerminal.js"></script>
+}
+

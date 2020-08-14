@@ -1,0 +1,8 @@
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\bin\Release\RFID.ASMXService.ServiceContracts.ServiceContracts.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\bin\Release\RFID.ASMXService.ServiceContracts.ServiceContracts.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\obj\Release\RFID.ASMXService.ServiceContracts.ServiceContracts.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\obj\Release\RFID.ASMXService.ServiceContracts.ServiceContracts.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\bin\Release\RFID.ASMXService.ServiceContracts.ServiceContracts.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\bin\Release\RFID.ASMXService.ServiceContracts.ServiceContracts.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\obj\Release\RFID.ASMXService.ServiceContracts.ServiceContracts.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\obj\Release\RFID.ASMXService.ServiceContracts.ServiceContracts.pdb

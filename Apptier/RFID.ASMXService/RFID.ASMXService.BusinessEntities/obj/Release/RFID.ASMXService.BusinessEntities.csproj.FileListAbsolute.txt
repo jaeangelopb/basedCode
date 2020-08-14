@@ -1,0 +1,12 @@
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessEntities\bin\Release\RFID.ASMXService.BusinessEntities.BusinessEntities.dll
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessEntities\bin\Release\RFID.ASMXService.BusinessEntities.BusinessEntities.pdb
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessEntities\obj\Release\RFID.ASMXService.BusinessEntities.BusinessEntities.dll
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessEntities\obj\Release\RFID.ASMXService.BusinessEntities.BusinessEntities.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessEntities\bin\Release\RFID.ASMXService.BusinessEntities.BusinessEntities.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessEntities\bin\Release\RFID.ASMXService.BusinessEntities.BusinessEntities.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessEntities\obj\Release\RFID.ASMXService.BusinessEntities.BusinessEntities.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessEntities\obj\Release\RFID.ASMXService.BusinessEntities.BusinessEntities.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessEntities\bin\Release\RFID.ASMXService.BusinessEntities.BusinessEntities.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessEntities\bin\Release\RFID.ASMXService.BusinessEntities.BusinessEntities.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessEntities\obj\Release\RFID.ASMXService.BusinessEntities.BusinessEntities.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessEntities\obj\Release\RFID.ASMXService.BusinessEntities.BusinessEntities.pdb

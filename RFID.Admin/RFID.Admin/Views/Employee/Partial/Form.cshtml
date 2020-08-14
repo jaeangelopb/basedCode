@@ -1,0 +1,79 @@
+﻿
+<form class="form-horizontal" id="form">
+    <div class="row">
+        <div class="col-md-3" align="center">
+            <input hidden type="text" id="imagevalue" name="Employee.ProfilePhoto" />
+            <img ng-if="Employee.ProfilePhoto" ng-src="{{Employee.ProfilePhoto}}" class="image img-circle" width="145px" height="145px" style="object-fit: cover;" />
+            <img ng-if="!Employee.ProfilePhoto" src="~/Images/no-avatar.jpg" class="image img-circle" width="145px" height="145px" style="object-fit: cover;" />
+            <button type="button" class="btn btn-danger waves-effect" ng-click="browseImage()">Upload Photo</button>
+            <input hidden type="file" style="display:none;" id="fileimage" onchange="angular.element(this).scope().UploadImage(this.files)">
+        </div>
+        <div class="col-md-9">
+            <input type="text" hidden name="Employee.EmployeeID" ng-model="Employee.EmployeeID" />
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Employee No.</label>
+                    <input ng-model="Employee.IDNumber" name="Employee.EmployeeNo" autocomplete="off">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Company</label>
+                    <md-select ng-model="Employee.CompanyDC.CompanyID" name="Employee.CompanyID" autocomplete="off">
+                        <md-option ng-repeat="opt in companylist track by opt.CompanyID" ng-value="opt.CompanyID">{{ opt.CompanyName }}</md-option>
+                    </md-select>
+                </md-input-container>
+
+            </div>
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>First name</label>
+                    <input ng-model="Employee.FirstName" name="Employee.FirstName" autocomplete="off">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Middle name</label>
+                    <input ng-model="Employee.MiddleName" name="Employee.MiddleName" autocomplete="off">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Last name</label>
+                    <input ng-model="Employee.LastName" name="Employee.LastName" autocomplete="off">
+                </md-input-container>
+            </div>
+
+            <div layout-gt-sm="row">
+
+                <md-input-container class="md-block" flex-gt-sm="50">
+                    <label>Affiliation</label>
+                    <md-select ng-model="Employee.AffiliationID" name="GateTerminal.GateTypeID">
+                        <md-option ng-repeat="opt in Affiliation.data.AffiliationList track by opt.AffiliationID" ng-value="opt.AffiliationID">{{ opt.AffiliationName}}</md-option>
+
+                    </md-select>
+                </md-input-container>
+
+                <md-input-container class="md-block" flex-gt-sm="50">
+                    <label>Role</label>
+                    <md-select ng-model="Employee.RoleID" name="Employee.RoleID" autocomplete="off">
+                        <md-option ng-value="1">Administrator</md-option>
+                        <md-option ng-value="2">HR</md-option>
+                        <md-option ng-value="3">Manager</md-option>
+                        <md-option ng-value="4">Supervisor</md-option>
+                        <md-option ng-value="5">Employee</md-option>
+                    </md-select>
+                </md-input-container>
+            </div>
+
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Email Address</label>
+                    <input ng-model="Employee.EmailAddress" name="Employee.EmailAddress" type="email" autocomplete="off">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Mobile Number</label>
+                    <input ng-model="Employee.MobileNumber" name="Employee.MobileNo" autocomplete="off">
+                </md-input-container>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</form>

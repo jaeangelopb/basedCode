@@ -1,0 +1,76 @@
+﻿
+<form class="form-horizontal" id="form">
+    <div class="row">
+        <div class="col-md-3" align="center">
+            <input hidden type="text" id="imagevalue" name="Employee.ProfilePhoto" />
+            <img ng-if="Employee.ProfilePhoto" ng-src="{{Employee.ProfilePhoto}}" class="image img-circle" width="145px" height="145px" style="object-fit: cover;" />
+            <img ng-if="!Employee.ProfilePhoto" src="~/Images/no-avatar.jpg" class="image img-circle" width="145px" height="145px" style="object-fit: cover;" />
+            <button type="button" class="btn btn-danger waves-effect" ng-click="browseImage()">Upload Photo</button>
+            <input hidden type="file" style="display:none;" id="fileimage" onchange="angular.element(this).scope().UploadImage(this.files)">
+        </div>
+        <div class="col-md-9">
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>ID Number.</label>
+                    <input  ng-model="Employee.IDNumber" name="Employee.IDNumber" autocomplete="off">
+                    <input hidden ng-model="Employee.MemberID" name="Employee.MemberID"  />
+                </md-input-container>
+            </div>
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>First name</label>
+                    <input ng-model="Employee.FirstName" name="Employee.FirstName" autocomplete="off">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Middle name</label>
+                    <input ng-model="Employee.MiddleName" name="Employee.MiddleName" autocomplete="off">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Last name</label>
+                    <input ng-model="Employee.LastName" name="Employee.LastName" autocomplete="off">
+                </md-input-container>
+            </div>
+
+            <div layout-gt-sm="row">
+
+                <md-input-container class="md-block" flex-gt-sm="30">
+                    <label>Department</label>
+                    <input ng-model="Employee.Department" name="Employee.Department" autocomplete="off">
+                </md-input-container>
+
+                <md-input-container class="md-block" flex-gt-sm="30">
+                    <label>Affiliation</label>
+                    <input ng-model="Employee.Affiliation" name="Employee.Affiliation" autocomplete="off">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm="30">
+                    <label>Affiliation</label>
+                    <input ng-model="Employee.EmailAddress" name="Employee.EmailAddress" type="email" autocomplete="off">
+                </md-input-container>
+            </div>
+
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Mobile Number</label>
+                    <input ng-model="Employee.MobileNumber" name="Employee.MobileNumber" autocomplete="off">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>RFID</label>
+                    <input ng-model="Employee.RFID" name="Employee.RFID" autocomplete="off">
+
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Status</label>
+                    <md-select ng-model="Employee.IsActive" name="Employee.IsActive" autocomplete="off">
+                        <md-option>====</md-option>
+                        <md-option ng-value="true">Active</md-option>
+                        <md-option ng-value="false">Inactive</md-option>
+
+                    </md-select>
+              </md-input-container>
+            </div>
+        </div>
+
+    </div>
+
+
+</form>

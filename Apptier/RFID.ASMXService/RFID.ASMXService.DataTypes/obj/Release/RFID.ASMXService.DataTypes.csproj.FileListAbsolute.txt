@@ -1,0 +1,8 @@
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.DataTypes\bin\Release\RFID.ASMXService.DataTypes.DataTypes.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.DataTypes\bin\Release\RFID.ASMXService.DataTypes.DataTypes.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.DataTypes\obj\Release\RFID.ASMXService.DataTypes.DataTypes.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.DataTypes\obj\Release\RFID.ASMXService.DataTypes.DataTypes.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.DataTypes\bin\Release\RFID.ASMXService.DataTypes.DataTypes.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.DataTypes\bin\Release\RFID.ASMXService.DataTypes.DataTypes.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.DataTypes\obj\Release\RFID.ASMXService.DataTypes.DataTypes.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.DataTypes\obj\Release\RFID.ASMXService.DataTypes.DataTypes.pdb

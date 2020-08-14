@@ -1,0 +1,185 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<link href="~/Scripts/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+<div ng-controller="DashboardController">
+    <div class="row clearfix">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="header" style="padding-bottom:0px;">
+                    <div layout-gt-sm="row">
+                        <div flex-gt-sm="30">
+                            <h2>
+                                <i class="material-icons">dashboard</i>
+                                <span>DASHBOARD</span>
+                            </h2>
+                        </div>
+
+
+                        <md-input-container class="md-block" flex-gt-sm>
+                            <label>Company</label>
+                            <md-select ng-model="filter.CompanyID" ng-change="List()" autocomplete="off">
+                                <md-option ng-repeat="opt in companylist " ng-value="opt.CompanyID">{{ opt.CompanyName }}</md-option>
+                            </md-select>
+                        </md-input-container>
+                        <div flex-gt-sm align="right">
+                            <md-button aria-label="photo" class="btn-default" ng-click="selectDateRange()">
+                                <md-tooltip md-direction="top">Date Filter</md-tooltip>
+                                <i class="material-icons">date_range</i>
+                                <span>{{ (dateRange.selectedTemplateName) ? (dateRange.selectedTemplateName) : 'Today' }}</span>
+                            </md-button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="body">
+                    <div class="row clearfix">
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box bg-pink hover-expand-effect">
+                                <div class="icon">
+                                    <i class="material-icons">access_time</i>
+                                </div>
+                                <div class="content">
+                                    <div class="text">EMPLOYEE IN</div>
+                                    <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20">{{summary[0].Total}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box bg-cyan hover-expand-effect">
+                                <div class="icon">
+                                    <i class="material-icons">exit_to_app</i>
+                                </div>
+                                <div class="content">
+                                    <div class="text">EMPLOYEE OUT</div>
+                                    <div class="number count-to" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20">{{summary[1].Total}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box bg-light-green hover-expand-effect">
+                                <div class="icon">
+                                    <i class="material-icons">announcement</i>
+                                </div>
+                                <div class="content">
+                                    <div class="text">PENDING LEAVES</div>
+                                    <div class="number count-to" data-from="0" data-to="243" data-speed="1000" data-fresh-interval="20">{{summary[2].Total}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box bg-orange hover-expand-effect">
+                                <div class="icon">
+                                    <i class="material-icons">people</i>
+                                </div>
+                                <div class="content">
+                                    <div class="text">TOTAL EMPLOYEES</div>
+                                    <div class="number count-to" data-from="0" data-to="1225" data-speed="1000" data-fresh-interval="20">{{summary[3].Total}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row clearfix">
+
+        <!-- #END# Task Info -->
+        <!-- Browser Usage -->
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="header">
+                    <h2>
+                        <i class="material-icons">timelapse</i>
+                        <span>Recent Time Log</span>
+                    </h2>
+                </div>
+                <div class="body">
+                    <div class="table-responsive">
+                        <table class="table table-striped" style="font-size:12.5px;">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>RFID</th>
+                                    <th>GateTerminalName</th>
+                                    <th>Log Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in data" ng-if="!loading">
+                                    <td class="noright">
+                        {{item.FirstName}} {{item.LastName}}
+                                    </td>
+                                    <td>
+                                        {{item.RFID}}
+                                    </td>
+                                    <td>{{ item.GateTerminalName }}</td>
+                                    <td>
+                                        {{item.LogType}}
+                                    </td>
+                               </tr>
+                                <tr ng-if="attendance.length == 0 && !loading">
+                                    <td colspan="4">No Attendance Log yet.</td>
+                                </tr>
+                                <tr ng-if="loading">
+                                    <td colspan="4">Loading...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <md-list>
+                <md-subheader class="md-no-sticky" style="background: #F44336;color: white;"><i class="material-icons">exit_to_app</i> <span>Recent Leave</span></md-subheader>
+                <md-list-item class="noright" ng-repeat="item in leaves" ng-if="!loading">
+                    <img ng-if="item.ProfilePhoto" ng-src="{{item.ProfilePhoto}}" onerror="this.src='/Images/no-avatar.jpg'" class="md-avatar" style="object-fit: cover;" />
+                    <img ng-if="!item.ProfilePhoto" src="~/Images/no-avatar.jpg" class="md-avatar" style="object-fit: cover;" />
+                    <p>{{ item.FirstName }} {{ item.LastName }}</p>
+                    <span style="position: absolute;margin-top: 15px;font-size: 10px;left: 73px;">{{ item.LeaveStartDate  | amDateFormat:'MMM D,YYYY'}} to {{ item.LeaveEndDate  | amDateFormat:'MMM D,YYYY'}} - {{item.NoOfDays}} day(s)</span>
+                </md-list-item>
+                <md-list-item class="noright" ng-if="leaves.length == 0 && !loading">
+                    No Leave yet
+                </md-list-item>
+
+                <md-list-item class="noright" ng-if="loading">
+                    Loading...
+                </md-list-item>
+
+            </md-list>
+        </div>
+    </div>
+</div>
+
+<style>
+    .NumberOfStaff {
+        font-size: 18px;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 5%;
+        color: white;
+    }
+
+    .AddStaff {
+        width: 70%;
+    }
+</style>
+
+
+@section Scripts {
+    <script src="~/Scripts/controller/Dashboard.js"></script>
+}
+
+

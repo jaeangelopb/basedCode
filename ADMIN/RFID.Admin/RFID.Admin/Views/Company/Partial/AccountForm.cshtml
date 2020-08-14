@@ -1,0 +1,56 @@
+﻿
+
+<form class="form-horizontal" id="form">
+    <div class="row">
+        <div class="col-md-12">
+            <input type="text" hidden name="Account.AccountID" ng-model="Employee.AccountID" />
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Account Name</label>
+                    <input ng-model="Employee.AccountName" name="Account.AccountName" autocomplete="off">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Branch</label>
+                    <input ng-model="Employee.Branch" name="Account.Branch" autocomplete="off">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Address</label>
+                    <input ng-model="Employee.Address" name="Account.Address" autocomplete="off">
+                </md-input-container>
+            </div>
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Email Address</label>
+                    <input ng-model="Employee.EmailAddress" name="Account.EmailAddress" type="email" autocomplete="off">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Telephone Number</label>
+                    <input ng-model="Employee.TelephoneNumber" name="Account.TelephoneNumber" autocomplete="off">
+                </md-input-container>
+
+            </div>
+
+
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Mobile Number:</label>
+                    <input ng-model="Employee.MobileNumber" name="Account.MobileNumber" autocomplete="off">
+                </md-input-container>
+            </div>
+
+            <div layout-gt-sm="row">
+                <div class="col-md-8">
+                    <div class="button-demo pull-right">
+                        <button type="button" ng-click="ToCancel()" class="btn btn-default waves-effect">CANCEL</button>
+                        <button type="button" ng-click="ConfirmSave()" class="btn btn-danger waves-effect">SAVE</button>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+    </div>
+
+
+
+</form>

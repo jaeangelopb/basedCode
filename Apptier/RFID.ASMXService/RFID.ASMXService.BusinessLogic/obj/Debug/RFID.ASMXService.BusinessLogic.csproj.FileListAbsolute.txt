@@ -1,0 +1,45 @@
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.BusinessLogic.BusinessLogic.dll
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.BusinessLogic.BusinessLogic.pdb
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.BusinessEntities.BusinessEntities.dll
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.DataAccess.DataAccess.dll
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.Helper.dll
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.BusinessEntities.BusinessEntities.pdb
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.DataAccess.DataAccess.pdb
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.Helper.pdb
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\obj\Debug\RFID.ASMXService.BusinessLogic.csprojResolveAssemblyReference.cache
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\obj\Debug\RFID.ASMXService.BusinessLogic.BusinessLogic.dll
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\obj\Debug\RFID.ASMXService.BusinessLogic.BusinessLogic.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.BusinessLogic.BusinessLogic.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.BusinessLogic.BusinessLogic.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.BusinessEntities.BusinessEntities.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.DataAccess.DataAccess.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.Helper.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.BusinessEntities.BusinessEntities.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.DataAccess.DataAccess.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.Helper.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\obj\Debug\RFID.ASMXService.BusinessLogic.csprojResolveAssemblyReference.cache
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\obj\Debug\RFID.ASMXService.BusinessLogic.BusinessLogic.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\obj\Debug\RFID.ASMXService.BusinessLogic.BusinessLogic.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.BusinessLogic.BusinessLogic.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.BusinessLogic.BusinessLogic.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.BusinessEntities.BusinessEntities.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.DataAccess.DataAccess.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.Helper.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.BusinessEntities.BusinessEntities.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.ASMXService.DataAccess.DataAccess.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\RFID.Helper.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\obj\Debug\RFID.ASMXService.BusinessLogic.csprojResolveAssemblyReference.cache
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\obj\Debug\RFID.ASMXService.BusinessLogic.BusinessLogic.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.BusinessLogic\obj\Debug\RFID.ASMXService.BusinessLogic.BusinessLogic.pdb

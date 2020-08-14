@@ -1,0 +1,5 @@
+C:\RFID-BaseCode\RFID.Admin\RFIDAdmin.BLL\bin\Release\RFIDAdmin.BLL.dll.config
+C:\RFID-BaseCode\RFID.Admin\RFIDAdmin.BLL\bin\Release\RFIDAdmin.BLL.dll
+C:\RFID-BaseCode\RFID.Admin\RFIDAdmin.BLL\bin\Release\RFIDAdmin.BLL.pdb
+C:\RFID-BaseCode\RFID.Admin\RFIDAdmin.BLL\obj\Release\RFIDAdmin.BLL.dll
+C:\RFID-BaseCode\RFID.Admin\RFIDAdmin.BLL\obj\Release\RFIDAdmin.BLL.pdb

@@ -1,0 +1,10 @@
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\bin\Release\RFID.ASMXService.ServiceImplementation.ServiceImplementation.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\bin\Release\RFID.ASMXService.ServiceImplementation.ServiceImplementation.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\obj\Release\RFID.ASMXService.ServiceImplementation.csprojResolveAssemblyReference.cache
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\obj\Release\RFID.ASMXService.ServiceImplementation.ServiceImplementation.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\obj\Release\RFID.ASMXService.ServiceImplementation.ServiceImplementation.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\bin\Release\RFID.ASMXService.ServiceImplementation.ServiceImplementation.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\bin\Release\RFID.ASMXService.ServiceImplementation.ServiceImplementation.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\obj\Release\RFID.ASMXService.ServiceImplementation.csprojResolveAssemblyReference.cache
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\obj\Release\RFID.ASMXService.ServiceImplementation.ServiceImplementation.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\obj\Release\RFID.ASMXService.ServiceImplementation.ServiceImplementation.pdb

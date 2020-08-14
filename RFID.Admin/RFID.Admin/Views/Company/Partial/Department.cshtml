@@ -1,0 +1,71 @@
+﻿
+<div class="row clearfix">
+
+    <!-- #END# Task Info -->
+    <!-- Browser Usage -->
+    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="header">
+                <h2>
+                    <i class="material-icons">timelapse</i>
+                    <span>Recent Time Log</span>
+                </h2>
+            </div>
+            <div class="body">
+                <div class="table-responsive">
+                    <table class="table table-striped" style="font-size:12.5px;">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>RFID</th>
+                                <th>GateTerminalName</th>
+                                <th>Log Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in data" ng-if="!loading">
+                                <td class="noright">
+                                    {{item.FirstName}} {{item.LastName}}
+                                </td>
+                                <td>
+                                    {{item.RFID}}
+                                </td>
+                                <td>{{ item.GateTerminalName }}</td>
+                                <td>
+                                    {{item.LogType}}
+                                </td>
+                            </tr>
+                            <tr ng-if="attendance.length == 0 && !loading">
+                                <td colspan="4">No Attendance Log yet.</td>
+                            </tr>
+                            <tr ng-if="loading">
+                                <td colspan="4">Loading...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-lg-6 col-md-3 col-sm-12 col-xs-12">
+        <md-list>
+            <md-subheader class="md-no-sticky" style="background: #F44336;color: white;"><i class="material-icons">exit_to_app</i> <span>Recent Leave</span></md-subheader>
+            <md-list-item class="noright" ng-repeat="item in leaves" ng-if="!loading">
+                <img ng-if="item.ProfilePhoto" ng-src="{{item.ProfilePhoto}}" onerror="this.src='/Images/no-avatar.jpg'" class="md-avatar" style="object-fit: cover;" />
+                <img ng-if="!item.ProfilePhoto" src="~/Images/no-avatar.jpg" class="md-avatar" style="object-fit: cover;" />
+                <p>{{ item.FirstName }} {{ item.LastName }}</p>
+                <span style="position: absolute;margin-top: 15px;font-size: 10px;left: 73px;">{{ item.LeaveStartDate  | amDateFormat:'MMM D,YYYY'}} to {{ item.LeaveEndDate  | amDateFormat:'MMM D,YYYY'}} - {{item.NoOfDays}} day(s)</span>
+            </md-list-item>
+            <md-list-item class="noright" ng-if="leaves.length == 0 && !loading">
+                No Leave yet
+            </md-list-item>
+
+            <md-list-item class="noright" ng-if="loading">
+                Loading...
+            </md-list-item>
+
+        </md-list>
+    </div>
+</div>

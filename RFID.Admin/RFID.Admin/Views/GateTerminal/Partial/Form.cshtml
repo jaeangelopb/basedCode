@@ -1,0 +1,74 @@
+﻿
+<form class="form-horizontal" id="form">
+    <div class="row">
+
+        <div class="col-md-12">
+            <input type="text" hidden name="Employee.EmployeeID" ng-model="Employee.GateTerminalName" />
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Employee No.</label>
+                    <input ng-model="Employee.GateTerminalName" name="Employee.EmployeeNo" autocomplete="off">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Company</label>
+                    <md-select ng-model="Employee.CompanyDC.CompanyID" name="Employee.CompanyID" autocomplete="off">
+                        <md-option ng-repeat="opt in companylist track by opt.CompanyID" ng-value="opt.CompanyID">{{ opt.CompanyName }}</md-option>
+                    </md-select>
+                </md-input-container>
+
+            </div>
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>First name</label>
+                    <input ng-model="Employee.FirstName" name="Employee.FirstName" autocomplete="off">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Middle name</label>
+                    <input ng-model="Employee.MiddleName" name="Employee.MiddleName" autocomplete="off">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Last name</label>
+                    <input ng-model="Employee.LastName" name="Employee.LastName" autocomplete="off">
+                </md-input-container>
+            </div>
+
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm="50">
+                    <label>Role</label>
+                    <md-select ng-model="Employee.RoleID" name="Employee.RoleID" autocomplete="off">
+                        <md-option ng-repeat="opt in GateType track by opt.GateTypeID" ng-value="opt.GateTypeID">{{ opt.GateTypeName}}</md-option>
+
+                    </md-select>
+                </md-input-container>
+            </div>
+
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Email Address</label>
+                    <input ng-model="Employee.EmailAddress" name="Employee.EmailAddress" type="email" autocomplete="off">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Mobile Number</label>
+                    <input ng-model="Employee.MobileNo" name="Employee.MobileNo" autocomplete="off">
+                </md-input-container>
+
+            </div>
+
+
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Password:</label>
+                    <input ng-model="Employee.Password" name="Employee.Password" autocomplete="off">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Confirm password:</label>
+                    <input ng-model="Employee.ConfirmPassword">
+                </md-input-container>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</form>

@@ -1,0 +1,10 @@
+C:\RFID-BaseCode\RFID.Admin\RFIDAdmin.BLL\bin\Debug\RFIDAdmin.BLL.dll.config
+C:\RFID-BaseCode\RFID.Admin\RFIDAdmin.BLL\bin\Debug\RFIDAdmin.BLL.dll
+C:\RFID-BaseCode\RFID.Admin\RFIDAdmin.BLL\bin\Debug\RFIDAdmin.BLL.pdb
+C:\RFID-BaseCode\RFID.Admin\RFIDAdmin.BLL\obj\Debug\RFIDAdmin.BLL.dll
+C:\RFID-BaseCode\RFID.Admin\RFIDAdmin.BLL\obj\Debug\RFIDAdmin.BLL.pdb
+C:\RFID-BaseCode\ADMIN\RFID.Admin\RFIDAdmin.BLL\bin\Debug\RFIDAdmin.BLL.dll.config
+C:\RFID-BaseCode\ADMIN\RFID.Admin\RFIDAdmin.BLL\bin\Debug\RFIDAdmin.BLL.dll
+C:\RFID-BaseCode\ADMIN\RFID.Admin\RFIDAdmin.BLL\bin\Debug\RFIDAdmin.BLL.pdb
+C:\RFID-BaseCode\ADMIN\RFID.Admin\RFIDAdmin.BLL\obj\Debug\RFIDAdmin.BLL.dll
+C:\RFID-BaseCode\ADMIN\RFID.Admin\RFIDAdmin.BLL\obj\Debug\RFIDAdmin.BLL.pdb

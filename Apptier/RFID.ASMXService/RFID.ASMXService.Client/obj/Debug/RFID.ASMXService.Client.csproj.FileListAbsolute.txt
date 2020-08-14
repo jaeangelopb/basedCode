@@ -1,0 +1,25 @@
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.Client\bin\Debug\RFID.ASMXService.Client.Client.exe.config
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.Client\bin\Debug\RFID.ASMXService.Client.Client.exe
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.Client\bin\Debug\RFID.ASMXService.Client.Client.pdb
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Debug\RFID.ASMXService.Client.csprojResolveAssemblyReference.cache
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Debug\RFID.ASMXService.Client.MainForm.resources
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Debug\RFID.ASMXService.Client.ResultsGrid.resources
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Debug\RFID.ASMXService.Client.csproj.GenerateResource.Cache
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Debug\RFID.ASMXService.Client.Client.exe
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Debug\RFID.ASMXService.Client.Client.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\bin\Debug\RFID.ASMXService.Client.Client.exe.config
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\bin\Debug\RFID.ASMXService.Client.Client.exe
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\bin\Debug\RFID.ASMXService.Client.Client.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Debug\RFID.ASMXService.Client.MainForm.resources
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Debug\RFID.ASMXService.Client.ResultsGrid.resources
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Debug\RFID.ASMXService.Client.csproj.GenerateResource.Cache
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Debug\RFID.ASMXService.Client.Client.exe
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Debug\RFID.ASMXService.Client.Client.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\bin\Debug\RFID.ASMXService.Client.Client.exe.config
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\bin\Debug\RFID.ASMXService.Client.Client.exe
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\bin\Debug\RFID.ASMXService.Client.Client.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Debug\RFID.ASMXService.Client.MainForm.resources
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Debug\RFID.ASMXService.Client.ResultsGrid.resources
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Debug\RFID.ASMXService.Client.csproj.GenerateResource.Cache
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Debug\RFID.ASMXService.Client.Client.exe
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.Client\obj\Debug\RFID.ASMXService.Client.Client.pdb

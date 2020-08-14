@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="InsertMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MemberEntity" type="tns:MemberEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MemberEntityDC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="MemberID" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="AccountID" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AccountName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MiddleName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GenderID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Birthday" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AffiliationID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Affiliation" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DepartmentID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Department" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IDNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MobileNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RFID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProfilePhoto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsActive" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="SchoolYear" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreatedDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UpdatedBy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UpdateDate" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertMemberResult" type="tns:MemberEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveAdministrator">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AdminEntity" type="tns:AdminEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AdminEntityDC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="accountName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="accountID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="adminID" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="middleName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="roleID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="roleName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="emailAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mobileNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="telephoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="genderID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="genderName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="birthdate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="address1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="address2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="zIP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="isActive" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="isForChangePassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="profilePhoto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="createdDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="createdBy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="updatedDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="updatedBy" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SaveAdministratorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveAdministratorResult" type="tns:AdminEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveAdminProperty">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AdminEntity" type="tns:AdminPropertyEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AdminPropertyEntityDC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AdminPropertyID" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="AdministratorID" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="AccountID" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="AccountName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsActive" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreatedDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UpdatedDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UpdatedBy" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SaveAdminPropertyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveAdminPropertyResult" type="tns:AdminPropertyEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InserShadowMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MemberEntity" type="tns:MemberEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InserShadowMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InserShadowMemberResult" type="tns:MemberEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMemberByAccountIDServer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMemberByAccountIDServerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteMemberByAccountIDServerResult" type="tns:MemberEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllAdminPropertyByAdminID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AdminID" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllAdminPropertyByAdminIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllAdminPropertyByAdminIDResult" type="tns:AdminPropertyListEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AdminPropertyListEntityDC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AdminProperty" type="tns:ArrayOfAdminPropertyEntityDC" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfAdminPropertyEntityDC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AdminPropertyEntityDC" nillable="true" type="tns:AdminPropertyEntityDC" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Search" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllMemberResult" type="tns:MemberListEntityDC" />
+            <s:element minOccurs="1" maxOccurs="1" name="Count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MemberListEntityDC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MemberList" type="tns:ArrayOfMemberEntityDC" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfMemberEntityDC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MemberEntityDC" nillable="true" type="tns:MemberEntityDC" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllAdministrator">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Search" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllAdministratorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllAdministratorResult" type="tns:AdminListEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AdminListEntityDC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AdminList" type="tns:ArrayOfAdminEntityDC" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfAdminEntityDC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AdminEntityDC" nillable="true" type="tns:AdminEntityDC" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllMemberByAccountId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllMemberByAccountIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllMemberByAccountIdResult" type="tns:MemberListEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAdministratorByAdminID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AdminID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAdministratorByAdminIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAdministratorByAdminIDResult" type="tns:AdminEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyUserResult" type="tns:AdminEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllRole">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllRoleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllRoleResult" type="tns:RoleListEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RoleListEntityDC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RoleList" type="tns:ArrayOfRoleEntityDC" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRoleEntityDC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RoleEntityDC" nillable="true" type="tns:RoleEntityDC" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RoleEntityDC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RoleID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="RoleName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllGenderType">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllGenderTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllGenderTypeResult" type="tns:GenderListEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GenderListEntityDC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="GenderList" type="tns:ArrayOfGenderEntityDC" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfGenderEntityDC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="GenderEntityDC" nillable="true" type="tns:GenderEntityDC" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GenderEntityDC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="GenderID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="GenderName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertMember" />
+  </wsdl:message>
+  <wsdl:message name="InsertMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveAdministratorSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveAdministrator" />
+  </wsdl:message>
+  <wsdl:message name="SaveAdministratorSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveAdministratorResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveAdminPropertySoapIn">
+    <wsdl:part name="parameters" element="tns:SaveAdminProperty" />
+  </wsdl:message>
+  <wsdl:message name="SaveAdminPropertySoapOut">
+    <wsdl:part name="parameters" element="tns:SaveAdminPropertyResponse" />
+  </wsdl:message>
+  <wsdl:message name="InserShadowMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:InserShadowMember" />
+  </wsdl:message>
+  <wsdl:message name="InserShadowMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:InserShadowMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteMemberByAccountIDServerSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteMemberByAccountIDServer" />
+  </wsdl:message>
+  <wsdl:message name="DeleteMemberByAccountIDServerSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteMemberByAccountIDServerResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllAdminPropertyByAdminIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllAdminPropertyByAdminID" />
+  </wsdl:message>
+  <wsdl:message name="GetAllAdminPropertyByAdminIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllAdminPropertyByAdminIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllMember" />
+  </wsdl:message>
+  <wsdl:message name="GetAllMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllAdministratorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllAdministrator" />
+  </wsdl:message>
+  <wsdl:message name="GetAllAdministratorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllAdministratorResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllMemberByAccountIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllMemberByAccountId" />
+  </wsdl:message>
+  <wsdl:message name="GetAllMemberByAccountIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllMemberByAccountIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAdministratorByAdminIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAdministratorByAdminID" />
+  </wsdl:message>
+  <wsdl:message name="GetAdministratorByAdminIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAdministratorByAdminIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyUserSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyUser" />
+  </wsdl:message>
+  <wsdl:message name="VerifyUserSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllRoleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllRole" />
+  </wsdl:message>
+  <wsdl:message name="GetAllRoleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllGenderTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllGenderType" />
+  </wsdl:message>
+  <wsdl:message name="GetAllGenderTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllGenderTypeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MembersServiceSoap">
+    <wsdl:operation name="InsertMember">
+      <wsdl:input message="tns:InsertMemberSoapIn" />
+      <wsdl:output message="tns:InsertMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveAdministrator">
+      <wsdl:input message="tns:SaveAdministratorSoapIn" />
+      <wsdl:output message="tns:SaveAdministratorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveAdminProperty">
+      <wsdl:input message="tns:SaveAdminPropertySoapIn" />
+      <wsdl:output message="tns:SaveAdminPropertySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InserShadowMember">
+      <wsdl:input message="tns:InserShadowMemberSoapIn" />
+      <wsdl:output message="tns:InserShadowMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMemberByAccountIDServer">
+      <wsdl:input message="tns:DeleteMemberByAccountIDServerSoapIn" />
+      <wsdl:output message="tns:DeleteMemberByAccountIDServerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAdminPropertyByAdminID">
+      <wsdl:input message="tns:GetAllAdminPropertyByAdminIDSoapIn" />
+      <wsdl:output message="tns:GetAllAdminPropertyByAdminIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMember">
+      <wsdl:input message="tns:GetAllMemberSoapIn" />
+      <wsdl:output message="tns:GetAllMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAdministrator">
+      <wsdl:input message="tns:GetAllAdministratorSoapIn" />
+      <wsdl:output message="tns:GetAllAdministratorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMemberByAccountId">
+      <wsdl:input message="tns:GetAllMemberByAccountIdSoapIn" />
+      <wsdl:output message="tns:GetAllMemberByAccountIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdministratorByAdminID">
+      <wsdl:input message="tns:GetAdministratorByAdminIDSoapIn" />
+      <wsdl:output message="tns:GetAdministratorByAdminIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyUser">
+      <wsdl:input message="tns:VerifyUserSoapIn" />
+      <wsdl:output message="tns:VerifyUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRole">
+      <wsdl:input message="tns:GetAllRoleSoapIn" />
+      <wsdl:output message="tns:GetAllRoleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGenderType">
+      <wsdl:input message="tns:GetAllGenderTypeSoapIn" />
+      <wsdl:output message="tns:GetAllGenderTypeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MembersServiceSoap" type="tns:MembersServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertMember">
+      <soap:operation soapAction="http://tempuri.org/InsertMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAdministrator">
+      <soap:operation soapAction="http://tempuri.org/SaveAdministrator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAdminProperty">
+      <soap:operation soapAction="http://tempuri.org/SaveAdminProperty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserShadowMember">
+      <soap:operation soapAction="http://tempuri.org/InserShadowMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMemberByAccountIDServer">
+      <soap:operation soapAction="http://tempuri.org/DeleteMemberByAccountIDServer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAdminPropertyByAdminID">
+      <soap:operation soapAction="http://tempuri.org/GetAllAdminPropertyByAdminID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMember">
+      <soap:operation soapAction="http://tempuri.org/GetAllMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAdministrator">
+      <soap:operation soapAction="http://tempuri.org/GetAllAdministrator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMemberByAccountId">
+      <soap:operation soapAction="http://tempuri.org/GetAllMemberByAccountId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdministratorByAdminID">
+      <soap:operation soapAction="http://tempuri.org/GetAdministratorByAdminID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyUser">
+      <soap:operation soapAction="http://tempuri.org/VerifyUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRole">
+      <soap:operation soapAction="http://tempuri.org/GetAllRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGenderType">
+      <soap:operation soapAction="http://tempuri.org/GetAllGenderType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MembersServiceSoap12" type="tns:MembersServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertMember">
+      <soap12:operation soapAction="http://tempuri.org/InsertMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAdministrator">
+      <soap12:operation soapAction="http://tempuri.org/SaveAdministrator" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAdminProperty">
+      <soap12:operation soapAction="http://tempuri.org/SaveAdminProperty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserShadowMember">
+      <soap12:operation soapAction="http://tempuri.org/InserShadowMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMemberByAccountIDServer">
+      <soap12:operation soapAction="http://tempuri.org/DeleteMemberByAccountIDServer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAdminPropertyByAdminID">
+      <soap12:operation soapAction="http://tempuri.org/GetAllAdminPropertyByAdminID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMember">
+      <soap12:operation soapAction="http://tempuri.org/GetAllMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAdministrator">
+      <soap12:operation soapAction="http://tempuri.org/GetAllAdministrator" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMemberByAccountId">
+      <soap12:operation soapAction="http://tempuri.org/GetAllMemberByAccountId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdministratorByAdminID">
+      <soap12:operation soapAction="http://tempuri.org/GetAdministratorByAdminID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyUser">
+      <soap12:operation soapAction="http://tempuri.org/VerifyUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRole">
+      <soap12:operation soapAction="http://tempuri.org/GetAllRole" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGenderType">
+      <soap12:operation soapAction="http://tempuri.org/GetAllGenderType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MembersService">
+    <wsdl:port name="MembersServiceSoap" binding="tns:MembersServiceSoap">
+      <soap:address location="http://localhost:64218/MembersService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MembersServiceSoap12" binding="tns:MembersServiceSoap12">
+      <soap12:address location="http://localhost:64218/MembersService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

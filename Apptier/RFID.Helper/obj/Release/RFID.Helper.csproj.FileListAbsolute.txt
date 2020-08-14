@@ -1,0 +1,15 @@
+E:\ACTIVE\RFID\Apptier\RFID.Helper\bin\Release\RFID.Helper.dll
+E:\ACTIVE\RFID\Apptier\RFID.Helper\bin\Release\RFID.Helper.pdb
+E:\ACTIVE\RFID\Apptier\RFID.Helper\obj\Release\RFID.Helper.csprojResolveAssemblyReference.cache
+E:\ACTIVE\RFID\Apptier\RFID.Helper\obj\Release\RFID.Helper.dll
+E:\ACTIVE\RFID\Apptier\RFID.Helper\obj\Release\RFID.Helper.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.Helper\bin\Release\RFID.Helper.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.Helper\bin\Release\RFID.Helper.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.Helper\obj\Release\RFID.Helper.csprojResolveAssemblyReference.cache
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.Helper\obj\Release\RFID.Helper.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.Helper\obj\Release\RFID.Helper.pdb
+C:\RFID-BaseCode\Apptier\RFID.Helper\bin\Release\RFID.Helper.dll
+C:\RFID-BaseCode\Apptier\RFID.Helper\bin\Release\RFID.Helper.pdb
+C:\RFID-BaseCode\Apptier\RFID.Helper\obj\Release\RFID.Helper.csprojResolveAssemblyReference.cache
+C:\RFID-BaseCode\Apptier\RFID.Helper\obj\Release\RFID.Helper.dll
+C:\RFID-BaseCode\Apptier\RFID.Helper\obj\Release\RFID.Helper.pdb

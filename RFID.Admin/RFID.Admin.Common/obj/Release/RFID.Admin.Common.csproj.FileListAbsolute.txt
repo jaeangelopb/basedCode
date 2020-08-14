@@ -1,0 +1,4 @@
+C:\RFID-BaseCode\RFID.Admin\RFID.Admin.Common\bin\Release\RFID.Admin.Common.dll
+C:\RFID-BaseCode\RFID.Admin\RFID.Admin.Common\bin\Release\RFID.Admin.Common.pdb
+C:\RFID-BaseCode\RFID.Admin\RFID.Admin.Common\obj\Release\RFID.Admin.Common.dll
+C:\RFID-BaseCode\RFID.Admin\RFID.Admin.Common\obj\Release\RFID.Admin.Common.pdb

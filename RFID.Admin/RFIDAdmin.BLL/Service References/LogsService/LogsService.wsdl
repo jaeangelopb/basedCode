@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="InsertRFIDLogs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RFIDlog" type="tns:RFIDLogEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RFIDLogEntityDC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RFIDLogID" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="RFID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DateTimeStamp" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="GateTerminalID" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LogType" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertRFIDLogsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertRFIDLogsResult" type="tns:RFIDLogEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthHeader" type="tns:AuthHeader" />
+      <s:complexType name="AuthHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="GetLogsByRFID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RFID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLogsByRFIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLogsByRFIDResult" type="tns:RFIDLogEntityDC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllStudentLogs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Search" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccountID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StartDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EndDate" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllStudentLogsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllStudentLogsResult" type="tns:ArrayOfStudentLogEntityDC" />
+            <s:element minOccurs="1" maxOccurs="1" name="Count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfStudentLogEntityDC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="StudentLogEntityDC" nillable="true" type="tns:StudentLogEntityDC" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="StudentLogEntityDC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="MemberID" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IDNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Affiliation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Department" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AccountName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RFID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DateTimeStamp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LogType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GateTerminalName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertRFIDLogsSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertRFIDLogs" />
+  </wsdl:message>
+  <wsdl:message name="InsertRFIDLogsSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertRFIDLogsResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertRFIDLogsAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetLogsByRFIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLogsByRFID" />
+  </wsdl:message>
+  <wsdl:message name="GetLogsByRFIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLogsByRFIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllStudentLogsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllStudentLogs" />
+  </wsdl:message>
+  <wsdl:message name="GetAllStudentLogsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllStudentLogsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LogsServiceSoap">
+    <wsdl:operation name="InsertRFIDLogs">
+      <wsdl:input message="tns:InsertRFIDLogsSoapIn" />
+      <wsdl:output message="tns:InsertRFIDLogsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogsByRFID">
+      <wsdl:input message="tns:GetLogsByRFIDSoapIn" />
+      <wsdl:output message="tns:GetLogsByRFIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllStudentLogs">
+      <wsdl:input message="tns:GetAllStudentLogsSoapIn" />
+      <wsdl:output message="tns:GetAllStudentLogsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LogsServiceSoap" type="tns:LogsServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertRFIDLogs">
+      <soap:operation soapAction="http://tempuri.org/InsertRFIDLogs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:InsertRFIDLogsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogsByRFID">
+      <soap:operation soapAction="http://tempuri.org/GetLogsByRFID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllStudentLogs">
+      <soap:operation soapAction="http://tempuri.org/GetAllStudentLogs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LogsServiceSoap12" type="tns:LogsServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertRFIDLogs">
+      <soap12:operation soapAction="http://tempuri.org/InsertRFIDLogs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:InsertRFIDLogsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogsByRFID">
+      <soap12:operation soapAction="http://tempuri.org/GetLogsByRFID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllStudentLogs">
+      <soap12:operation soapAction="http://tempuri.org/GetAllStudentLogs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LogsService">
+    <wsdl:port name="LogsServiceSoap" binding="tns:LogsServiceSoap">
+      <soap:address location="http://localhost:64218/LogsService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LogsServiceSoap12" binding="tns:LogsServiceSoap12">
+      <soap12:address location="http://localhost:64218/LogsService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

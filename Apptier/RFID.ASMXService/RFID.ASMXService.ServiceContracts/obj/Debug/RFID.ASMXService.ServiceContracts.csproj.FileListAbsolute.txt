@@ -1,0 +1,13 @@
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\bin\Debug\RFID.ASMXService.ServiceContracts.ServiceContracts.dll
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\bin\Debug\RFID.ASMXService.ServiceContracts.ServiceContracts.pdb
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\obj\Debug\RFID.ASMXService.ServiceContracts.csprojResolveAssemblyReference.cache
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\obj\Debug\RFID.ASMXService.ServiceContracts.ServiceContracts.dll
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\obj\Debug\RFID.ASMXService.ServiceContracts.ServiceContracts.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\bin\Debug\RFID.ASMXService.ServiceContracts.ServiceContracts.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\bin\Debug\RFID.ASMXService.ServiceContracts.ServiceContracts.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\obj\Debug\RFID.ASMXService.ServiceContracts.ServiceContracts.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\obj\Debug\RFID.ASMXService.ServiceContracts.ServiceContracts.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\bin\Debug\RFID.ASMXService.ServiceContracts.ServiceContracts.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\bin\Debug\RFID.ASMXService.ServiceContracts.ServiceContracts.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\obj\Debug\RFID.ASMXService.ServiceContracts.ServiceContracts.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceContracts\obj\Debug\RFID.ASMXService.ServiceContracts.ServiceContracts.pdb

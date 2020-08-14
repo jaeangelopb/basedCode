@@ -1,0 +1,82 @@
+﻿
+<div class="table-responsive">
+    <div layout-gt-sm="row">
+
+        <md-input-container class="md-block" flex-gt-sm="40">
+            <label>Company</label>
+            <md-select ng-model="uploadlist.CompanyID" autocomplete="off">
+                <md-option ng-repeat="opt in companylist track by opt.CompanyID" ng-value="opt.CompanyID">{{ opt.CompanyName }}</md-option>
+            </md-select>
+        </md-input-container>
+
+        <md-input-container class="md-block" flex-gt-sm="20">
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm="40">
+            <label>Search</label>
+            <input ng-model="uploadlist.Search" autocomplete="off">
+        </md-input-container>
+
+    </div>
+    <table class="table table-bordered table-striped table-hover js-basic-example dataTable" style="font-size:12.5px;">
+        <thead>
+            <tr>
+                <th>Employee No.</th>
+                <th>Last name</th>
+                <th>First name</th>
+                <th>Middle name</th>
+                <th>Email Address</th>
+                <th>Mobile Number</th>
+                <th>Role</th>
+                <th>Submit Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in uploadlist.data | filter: uploadlist.Search">
+
+                <td> {{ item.EmployeeNo }} </td>
+                <td> {{ item.LastName }} </td>
+                <td> {{ item.FirstName }} </td>
+                <td> {{ item.MiddleName }} </td>
+                <td> {{ item.EmailAddress }} </td>
+                <td>{{ item.MobileNumber }}</td>
+                <td>Employee</td>
+                <td>
+                    <span class="label label-warning" ng-if="item.SubmitStatus == 0">Pending</span>
+                    <span class="label label-success" ng-if="item.SubmitStatus == 1">Successfully uploaded</span>
+                    <span class="label label-danger" ng-if="item.SubmitStatus == 2">{{item.SubmitStatusErrorMsg}}</span>
+                </td>
+
+            </tr>
+            <tr ng-if="uploadlist.data.length == 0 && uploadlist.Search != ''">
+                <td colspan="7">
+                    <i class="material-icons">info</i>
+                    <span style="vertical-align: super;">No matching "{{ uploadlist.Search }}" employee were found.</span>
+
+                </td>
+            </tr>
+
+            <tr ng-if="uploadlist.data.length == 0 && !uploadlist.Search">
+                <td colspan="7">
+                    <i class="material-icons">info</i>
+                    <span style="vertical-align: super;">No employee yet.</span>
+
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</div>
+<div class="dataTables_paginate paging_simple_numbers" align="center" id="DataTables_Table_0_paginate">
+    <ul class="pagination">
+        <li class="paginate_button previous" id="DataTables_Table_0_previous">
+            <a aria-controls="DataTables_Table_0" ng-click="CSVPageIndexChange(-1)" ng-disabled="(uploadlist.totalPage == 0)" tabindex="0">Previous</a>
+        </li>
+        <li class="paginate_button">
+            <a aria-controls="DataTables_Table_0" tabindex="0">{{ (uploadlist.totalPage > 0) ? uploadlist.PageIndex : 0 }} of {{ uploadlist.totalPage }} - {{ uploadlist.total }} item(s)</a>
+        </li>
+        <li class="paginate_button next" id="DataTables_Table_0_next">
+            <a aria-controls="DataTables_Table_0" ng-click="CSVPageIndexChange(1)" ng-disabled="(uploadlist.totalPage == 0)" tabindex="0">Next</a>
+        </li>
+    </ul>
+</div>

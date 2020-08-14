@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFID.Admin", "RFID.Admin\RFID.Admin.csproj", "{173FB231-D1F6-4463-B6F2-33BC5CB63F68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFID.Admin.BLL", "RFIDAdmin.BLL\RFID.Admin.BLL.csproj", "{2AA29D86-29A6-426A-8D24-FDEE30A087CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFID.Admin.Common", "RFID.Admin.Common\RFID.Admin.Common.csproj", "{3773BA83-82A3-4824-A42F-F67AA9AFA378}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{173FB231-D1F6-4463-B6F2-33BC5CB63F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{173FB231-D1F6-4463-B6F2-33BC5CB63F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{173FB231-D1F6-4463-B6F2-33BC5CB63F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{173FB231-D1F6-4463-B6F2-33BC5CB63F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AA29D86-29A6-426A-8D24-FDEE30A087CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AA29D86-29A6-426A-8D24-FDEE30A087CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AA29D86-29A6-426A-8D24-FDEE30A087CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AA29D86-29A6-426A-8D24-FDEE30A087CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3773BA83-82A3-4824-A42F-F67AA9AFA378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3773BA83-82A3-4824-A42F-F67AA9AFA378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3773BA83-82A3-4824-A42F-F67AA9AFA378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3773BA83-82A3-4824-A42F-F67AA9AFA378}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

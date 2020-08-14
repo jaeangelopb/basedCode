@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Reedley\Apptier</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AccountService.asmx">
+      <publishTime>10/09/2018 13:11:33</publishTime>
+    </File>
+    <File Include="AccountsService.asmx">
+      <publishTime>10/09/2018 14:06:14</publishTime>
+    </File>
+    <File Include="ApplicationInsights.config">
+      <publishTime>09/12/2018 15:57:18</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>09/12/2018 15:57:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>04/25/2013 10:04:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <publishTime>04/25/2013 10:04:12</publishTime>
+    </File>
+    <File Include="bin/RFID.ASMXService.BusinessEntities.BusinessEntities.dll">
+      <publishTime>11/13/2018 14:17:46</publishTime>
+    </File>
+    <File Include="bin/RFID.ASMXService.BusinessLogic.BusinessLogic.dll">
+      <publishTime>11/13/2018 14:17:48</publishTime>
+    </File>
+    <File Include="bin/RFID.ASMXService.DataAccess.DataAccess.dll">
+      <publishTime>11/13/2018 14:17:47</publishTime>
+    </File>
+    <File Include="bin/RFID.Helper.dll">
+      <publishTime>11/13/2018 14:17:47</publishTime>
+    </File>
+    <File Include="bin/RFID.WCFServiceCall.dll">
+      <publishTime>11/13/2018 14:17:54</publishTime>
+    </File>
+    <File Include="GateTerminalService.asmx">
+      <publishTime>10/09/2018 13:14:27</publishTime>
+    </File>
+    <File Include="GateTerminalsService.asmx">
+      <publishTime>10/09/2018 14:09:41</publishTime>
+    </File>
+    <File Include="LogsService.asmx">
+      <publishTime>09/12/2018 15:23:30</publishTime>
+    </File>
+    <File Include="MemberService.asmx">
+      <publishTime>10/09/2018 13:17:34</publishTime>
+    </File>
+    <File Include="MembersService.asmx">
+      <publishTime>10/09/2018 14:10:36</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/12/2018 15:57:20</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.js">
+      <publishTime>09/12/2018 15:57:18</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>09/12/2018 15:57:18</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/13/2018 14:18:13</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

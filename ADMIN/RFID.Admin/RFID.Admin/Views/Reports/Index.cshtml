@@ -1,0 +1,155 @@
+﻿
+@{
+    ViewBag.Title = "Reports";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row clearfix" ng-controller="ReportsController">
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="header">
+                    <div class="row clearfix action-group" ng-if="mode=='list'  && !processing.enable">
+                        <div class="col-md-3">
+                            <h2>Reports</h2>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div layout-gt-sm="row" style="height:50px">
+                                <div class="button-demo" flex-gt-sm="30">
+
+                                    <md-fab-actions class="md-toolbar-tools" style="width:120px;">
+
+                                        <md-button aria-label="photo" class="md-icon-button btn-default" ng-click="selectDateRange()">
+                                            <md-tooltip md-direction="top">Date Filter</md-tooltip>
+                                            <i class="material-icons">date_range</i>
+                                        </md-button>
+                                        <md-button aria-label="photo" class="md-icon-button btn-default" ng-click="ExportAttendanceLogs()">
+                                            <md-tooltip md-direction="top">Export attendance</md-tooltip>
+                                            <i class="material-icons">get_app</i>
+                                        </md-button>
+                                    </md-fab-actions>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-5" style="height:50px;padding-top:4px;">
+                            <div layout-gt-sm="row">
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>Search</label>
+                                    <input ng-keyup="Search(attendance)" ng-model="attendance.Search" autocomplete="off">
+                                </md-input-container>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="body">
+                    <div ng-if="mode=='list'">
+                        <md-chips>
+                            <md-chip ng-if="dateRange.selectedTemplateName"><i class="material-icons">date_range</i> <span>{{ dateRange.selectedTemplateName }}</span>&nbsp;   &nbsp;<strong class="pull-right" style="cursor:pointer;" ng-click="resetDateRange()">&times;</strong></md-chip>
+                        </md-chips>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hover js-basic-example dataTable" style="font-size:12.5px;">
+                                <thead>
+                                    <tr>
+
+                                        <th ng-if="attendance.CompanyID == '-'">Company</th>
+                                        <th>Name</th>
+                                        <th>Employee No.</th>
+                                        <th>Log type</th>
+                                        <th>Log date</th>
+                                        <th>GateTerminal Name</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="item in attendance.data" ng-if="!attendance.loading">
+
+                                        <td ng-if="attendance.CompanyID == '-'">{{ item.CompanyName }}</td>
+                                        <td>
+                                            <img ng-if="item.PhotoData" ng-src="{{ item.PhotoData }}" onerror="this.src='/Images/not-found-img.jpg'" class="img-circle" style="object-fit: cover;" width="32px" height="32px" />
+                                            <img ng-if="!item.PhotoData" src="~/Images/not-found-img.jpg" class="img-circle" style="object-fit: cover;" width="32px" height="32px" />
+                                            {{ item.FirstName }} {{ item.LastName }}
+                                        </td>
+                                        <td>{{ item.IDNumber }}</td>
+                                        <td>
+                                            <span class="label label-success" ng-if="item.LogType == 'TIME IN' || item.LogType == 'TIME IN'">{{item.LogType}}</span>
+                                            <span class="label label-danger" ng-if="item.LogType =='TIME OUT' ||item.LogType == 'TIME OUT'">{{item.LogType}}</span>
+
+                                        </td>
+                                        <td>{{ item.DateTimeStamp }}</td>
+                                        <td>{{ item.GateTerminalName }}</td>
+
+                                    </tr>
+                                    <tr ng-if="attendance.data.length == 0 && employee.Search != '' && !employee.loading">
+                                        <td colspan="7">
+                                            <i class="material-icons">info</i>
+                                            <span style="vertical-align: super;">No matching "{{ employee.Search }}" employee were found.</span>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr ng-if="attendance.data.length == 0 && !attendance.Search && !attendance.loading">
+                                        <td colspan="7">
+                                            <i class="material-icons">info</i>
+                                            <span style="vertical-align: super;">No attendance yet.</span>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr ng-if="attendance.loading">
+                                        <td colspan="7">
+                                            <i class="material-icons">info</i>
+                                            <span style="vertical-align: super;">Loading data...</span>
+
+                                        </td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="dataTables_paginate paging_simple_numbers" align="center" id="DataTables_Table_0_paginate">
+                            <ul class="pagination">
+                                <li class="paginate_button previous" id="DataTables_Table_0_previous">
+                                    <a aria-controls="DataTables_Table_0" ng-click="PageIndexChange(attendance,-1)" ng-disabled="(attendance.totalPage == 0)" tabindex="0">Previous</a>
+                                </li>
+                                <li class="paginate_button">
+                                    <a aria-controls="DataTables_Table_0" tabindex="0">{{ (attendance.totalPage > 0) ? attendance.PageIndex : 0 }} of {{ attendance.totalPage }} - {{ attendance.total }} item(s)</a>
+                                </li>
+                                <li class="paginate_button next" id="DataTables_Table_0_next">
+                                    <a aria-controls="DataTables_Table_0" ng-click="PageIndexChange(attendance,1)" ng-disabled="(attendance.totalPage == 0)" tabindex="0">Next</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+       <!---  <div ng-if="mode=='view'">
+                    </div>
+           --->
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+@section Scripts {
+    <script src="~/Scripts/controller/Reports.js"></script>
+}
+
+

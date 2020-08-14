@@ -1,0 +1,13 @@
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\bin\Debug\RFID.ASMXService.ServiceImplementation.ServiceImplementation.dll
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\bin\Debug\RFID.ASMXService.ServiceImplementation.ServiceImplementation.pdb
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\obj\Debug\RFID.ASMXService.ServiceImplementation.csprojResolveAssemblyReference.cache
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\obj\Debug\RFID.ASMXService.ServiceImplementation.ServiceImplementation.dll
+E:\ACTIVE\RFID\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\obj\Debug\RFID.ASMXService.ServiceImplementation.ServiceImplementation.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\bin\Debug\RFID.ASMXService.ServiceImplementation.ServiceImplementation.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\bin\Debug\RFID.ASMXService.ServiceImplementation.ServiceImplementation.pdb
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\obj\Debug\RFID.ASMXService.ServiceImplementation.ServiceImplementation.dll
+D:\WORKING RFID(APPTIER & WEBTIER)\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\obj\Debug\RFID.ASMXService.ServiceImplementation.ServiceImplementation.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\bin\Debug\RFID.ASMXService.ServiceImplementation.ServiceImplementation.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\bin\Debug\RFID.ASMXService.ServiceImplementation.ServiceImplementation.pdb
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\obj\Debug\RFID.ASMXService.ServiceImplementation.ServiceImplementation.dll
+C:\RFID-BaseCode\Apptier\RFID.ASMXService\RFID.ASMXService.ServiceImplementation\obj\Debug\RFID.ASMXService.ServiceImplementation.ServiceImplementation.pdb
